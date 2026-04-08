@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IT-Majestic | О нас</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="font-['Inter'] bg-slate-900 text-white overflow-x-hidden">
+
+    <!-- Navigation -->
+    <nav class="fixed w-full z-50 bg-slate-900/80 backdrop-blur-md border-b border-slate-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <a href="index.html" class="flex items-center">
+                    <i data-lucide="cpu" class="w-8 h-8 text-blue-500 mr-2"></i>
+                    <span class="text-xl font-bold bg-gradient-to-r from-blue-400 to-purple-600 bg-clip-text text-transparent">
+                        IT-Majestic
+                    </span>
+                </a>
+                
+                <div class="hidden md:flex space-x-8">
+                    <a href="index.html" class="text-gray-300 hover:text-white transition">Главная</a>
+                    <a href="about.html" class="text-blue-400 font-medium">О нас</a>
+                    <a href="catalog.html" class="text-gray-300 hover:text-white transition">Каталог</a>
+                    <a href="contact.html" class="text-gray-300 hover:text-white transition">Контакты</a>
+                </div>
+
+                <button id="mobile-menu-btn" class="md:hidden text-gray-300">
+                    <i data-lucide="menu" class="w-6 h-6"></i>
+                </button>
+            </div>
+        </div>
+
+        <div id="mobile-menu" class="hidden md:hidden bg-slate-800 border-b border-slate-700">
+            <div class="px-4 pt-2 pb-3 space-y-1">
+                <a href="index.html" class="block px-3 py-2 text-gray-300 hover:text-white">Главная</a>
+                <a href="about.html" class="block px-3 py-2 text-blue-400 font-medium">О нас</a>
+                <a href="catalog.html" class="block px-3 py-2 text-gray-300 hover:text-white">Каталог</a>
+                <a href="contact.html" class="block px-3 py-2 text-gray-300 hover:text-white">Контакты</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero -->
+    <section class="relative pt-32 pb-20 lg:pt-40 lg:pb-32 bg-gradient-to-b from-blue-900/30 to-slate-900">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold mb-6">О компании IT-Majestic</h1>
+            <p class="text-xl text-gray-400 max-w-3xl mx-auto">
+                Мы создаём технологии, которые меняют мир к лучшему. Наша миссия — сделать инновации доступными для каждого бизнеса.
+            </p>
+        </div>
+    </section>
+
+    <!-- Story -->
+    <section class="py-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div>
+                    <h2 class="text-3xl font-bold mb-6">Наша история</h2>
+                    <div class="space-y-4 text-gray-400">
+                        <p>IT-Majestic была основана в 2014 году группой энтузиастов, веривших в силу технологий. За 10 лет мы выросли из небольшой студии в международную компанию с офисами в 5 странах.</p>
+                        <p>Сегодня мы — это команда из 50+ экспертов: разработчиков, дизайнеров, аналитиков и инженеров, которые каждый день создают решения для сложных бизнес-задач.</p>
+                        <p>Нам доверяют крупнейшие корпорации и амбициозные стартапы, потому что мы не просто пишем код — мы предлагаем стратегии цифрового роста.</p>
+                    </div>
+                    
+                    <div class="mt-8 flex gap-4">
+                        <div class="text-center">
+                            <div class="text-3xl font-bold text-blue-400">10</div>
+                            <div class="text-sm text-gray-500">Лет на рынке</div>
+                        </div>
+                        <div class="w-px bg-gray-700"></div>
+                        <div class="text-center">
+                            <div class="text-3xl font-bold text-purple-400">150+</div>
+                            <div class="text-sm text-gray-500">Проектов</div>
+                        </div>
+                        <div class="w-px bg-gray-700"></div>
+                        <div class="text-center">
+                            <div class="text-3xl font-bold text-pink-400">50+</div>
+                            <div class="text-sm text-gray-500">Сотрудников</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="relative">
+                    <img src="http://static.photos/office/640x360/201" alt="Office" class="rounded-2xl shadow-2xl shadow-blue-500/20">
+                    <div class="absolute -bottom-6 -right-6 w-48 h-48 bg-gradient-to-br from-blue-600 to-purple-600 rounded-2xl -z-10"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Values -->
+    <section class="py-20 bg-slate-800/30">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl font-bold text-center mb-12">Наши ценности</h2>
+            <div class="grid md:grid-cols-4 gap-6">
+                <div class="text-center p-6">
+                    <div class="w-16 h-16 bg-blue-500/20 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i data-lucide="lightbulb" class="w-8 h-8 text-blue-400"></i>
+                    </div>
+                    <h3 class="font-semibold mb-2">Инновации</h3>
+                    <p class="text-gray-400 text-sm">Мы всегда на шаг впереди, используя передовые технологии</p>
+                </div>
+                
+                <div class="text-center p-6">
+                    <div class="w-16 h-16 bg-purple-500/20 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i data-lucide="users" class="w-8 h-8 text-purple-400"></i>
+                    </div>
+                    <h3 class="font-semibold mb-2">Команда</h3>
+                    <p class="text-gray-400 text-sm">Люди — наш главный актив, мы инвестируем в развитие талантов</p>
+                </div>
+                
+                <div class="text-center p-6">
+                    <div class="w-16 h-16 bg-pink-500/20 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i data-lucide="shield-check" class="w-8 h-8 text-pink-400"></i>
+                    </div>
+                    <h3 class="font-semibold mb-2">Надёжность</h3>
+                    <p class="text-gray-400 text-sm">Соблюдаем сроки и гарантируем качество каждого решения</p>
+                </div>
+                
+                <div class="text-center p-6">
+                    <div class="w-16 h-16 bg-green-500/20 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i data-lucide="trending-up" class="w-8 h-8 text-green-400"></i>
+                    </div>
+                    <h3 class="font-semibold mb-2">Развитие</h3>
+                    <p class="text-gray-400 text-sm">Постоянное обучение и совершенствование процессов</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team -->
+    <section class="py-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl font-bold text-center mb-4">Наша команда</h2>
+            <p class="text-gray-400 text-center mb-12 max-w-2xl mx-auto">Люди, которые делают невозможное возможным</p>
+            
+            <div class="grid md:grid-cols-3 lg:grid-cols-4 gap-6">
+                <div class="bg-slate-800 rounded-2xl overflow-hidden border border-slate-700 hover:border-blue-500/50 transition group">
+                    <img src="http://static.photos/people/320x240/301" alt="Team" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="font-semibold text-lg">Алексей Петров</h3>
+                        <p class="text-blue-400 text-sm mb-2">CEO & Founder</p>
+                        <p class="text-gray-400 text-sm">Видение стратегии и развитие компании с 2014 года</p>
+                    </div>
+                </div>
+
+                <div class="bg-slate-800 rounded-2xl overflow-hidden border border-slate-700 hover:border-blue-500/50 transition group">
+                    <img src="http://static.photos/people/320x240/302" alt="Team" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="font-semibold text-lg">Мария Иванова</h3>
+                        <p class="text-purple-400 text-sm mb-2">CTO</p>
+                        <p class="text-gray-400 text-sm">Техническое лидерство и архитектура решений</p>
+                    </div>
+                </div>
+
+                <div class="bg-slate-800 rounded-2xl overflow-hidden border border-slate-700 hover:border-blue-500/50 transition group">
+                    <img src="http://static.photos/people/320x240/303" alt="Team" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="font-semibold text-lg">Дмитрий Сидоров</h3>
+                        <p class="text-pink-400 text-sm mb-2">Head of Development</p>
+                        <p class="text-gray-400 text-sm">Управление процессами разработки и качеством кода</p>
+                    </div>
+                </div>
+
+                <div class="bg-slate-800 rounded-2xl overflow-hidden border border-slate-700 hover:border-blue-500/50 transition group">
+                    <img src="http://static.photos/people/320x240/304" alt="Team" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="font-semibold text-lg">Анна Козлова</h3>
+                        <p class="text-green-400 text-sm mb-2">Product Manager</p>
+                        <p class="text-gray-400 text-sm">Управление продуктами и UX-стратегия</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-slate-950 border-t border-slate-800 pt-16 pb-8">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-4 gap-8 mb-12">
+                <div class="col-span-1 md:col-span-2">
+                    <div class="flex items-center mb-4">
+                        <i data-lucide="cpu" class="w-6 h-6 text-blue-500 mr-2"></i>
+                        <span class="text-xl font-bold">IT-Majestic</span>
+                    </div>
+                    <p class="text-gray-400 mb-4 max-w-sm">Ваш надёжный партнёр в мире информационных технологий.</p>
+                </div>
+                
+                <div>
+                    <h4 class="font-semibold mb-4">Навигация</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="index.html" class="hover:text-white transition">Главная</a></li>
+                        <li><a href="about.html" class="hover:text-white transition">О нас</a></li>
+                        <li><a href="catalog.html" class="hover:text-white transition">Каталог</a></li>
+                        <li><a href="contact.html" class="hover:text-white transition">Контакты</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="font-semibold mb-4">Контакты</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li class="flex items-center"><i data-lucide="mail" class="w-4 h-4 mr-2"></i> info@it-majestic.com</li>
+                        <li class="flex items-center"><i data-lucide="phone" class="w-4 h-4 mr-2"></i> +7 (999) 123-45-67</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="border-t border-slate-800 pt-8 text-center text-gray-500 text-sm">
+                <p>&copy; 2024 IT-Majestic. Все права защищены.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+</html>

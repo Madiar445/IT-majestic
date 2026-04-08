@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IT-Majestic | Продукт</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="font-['Inter'] bg-slate-900 text-white overflow-x-hidden">
+
+    <!-- Navigation -->
+    <nav class="fixed w-full z-50 bg-slate-900/80 backdrop-blur-md border-b border-slate-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <a href="index.html" class="flex items-center">
+                    <i data-lucide="cpu" class="w-8 h-8 text-blue-500 mr-2"></i>
+                    <span class="text-xl font-bold bg-gradient-to-r from-blue-400 to-purple-600 bg-clip-text text-transparent">
+                        IT-Majestic
+                    </span>
+                </a>
+                
+                <div class="hidden md:flex space-x-8">
+                    <a href="index.html" class="text-gray-300 hover:text-white transition">Главная</a>
+                    <a href="about.html" class="text-gray-300 hover:text-white transition">О нас</a>
+                    <a href="catalog.html" class="text-gray-300 hover:text-white transition">Каталог</a>
+                    <a href="contact.html" class="text-gray-300 hover:text-white transition">Контакты</a>
+                </div>
+
+                <button id="mobile-menu-btn" class="md:hidden text-gray-300">
+                    <i data-lucide="menu" class="w-6 h-6"></i>
+                </button>
+            </div>
+        </div>
+
+        <div id="mobile-menu" class="hidden md:hidden bg-slate-800 border-b border-slate-700">
+            <div class="px-4 pt-2 pb-3 space-y-1">
+                <a href="index.html" class="block px-3 py-2 text-gray-300 hover:text-white">Главная</a>
+                <a href="about.html" class="block px-3 py-2 text-gray-300 hover:text-white">О нас</a>
+                <a href="catalog.html" class="block px-3 py-2 text-gray-300 hover:text-white">Каталог</a>
+                <a href="contact.html" class="block px-3 py-2 text-gray-300 hover:text-white">Контакты</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Breadcrumb -->
+    <div class="pt-24 pb-4 bg-slate-800/30">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center text-sm text-gray-400">
+                <a href="index.html" class="hover:text-white transition">Главная</a>
+                <i data-lucide="chevron-right" class="w-4 h-4 mx-2"></i>
+                <a href="catalog.html" class="hover:text-white transition">Каталог</a>
+                <i data-lucide="chevron-right" class="w-4 h-4 mx-2"></i>
+                <span class="text-white" id="breadcrumb-name">Продукт</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Product Detail -->
+    <section class="py-8 pb-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid lg:grid-cols-2 gap-12">
+                <!-- Image -->
+                <div class="space-y-4">
+                    <div class="rounded-2xl overflow-hidden bg-slate-800 border border-slate-700">
+                        <img id="product-image" src="" alt="Product" class="w-full h-96 object-cover">
+                    </div>
+                    <div class="grid grid-cols-4 gap-2">
+                        <button class="rounded-lg overflow-hidden border-2 border-blue-500 opacity-100">
+                            <img id="thumb-1" src="" class="w-full h-20 object-cover">
+                        </button>
+                        <button class="rounded-lg overflow-hidden border-2 border-transparent opacity-60 hover:opacity-100 transition">
+                            <img src="http://static.photos/technology/320x240/201" class="w-full h-20 object-cover">
+                        </button>
+                        <button class="rounded-lg overflow-hidden border-2 border-transparent opacity-60 hover:opacity-100 transition">
+                            <img src="http://static.photos/technology/320x240/202" class="w-full h-20 object-cover">
+                        </button>
+                        <button class="rounded-lg overflow-hidden border-2 border-transparent opacity-60 hover:opacity-100 transition">
+                            <img src="http://static.photos/technology/320x240/203" class="w-full h-20 object-cover">
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Info -->
+                <div>
+                    <div class="flex items-center gap-2 mb-4">
+                        <span id="product-category" class="px-3 py-1 bg-blue-500/20 text-blue-400 rounded-full text-sm font-medium border border-blue-500/30">
+                            Категория
+                        </span>
+                        <div class="flex items-center text-yellow-400 text-sm">
+                            <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                            <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                            <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                            <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                            <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                            <span class="ml-1 text-gray-400">(4.9)</span>
+                        </div>
+                    </div>
+
+                    <h1 id="product-name" class="text-3xl md:text-4xl font-bold mb-4">Название продукта</h1>
+                    <p id="product-description" class="text-gray-400 text-lg mb-6">Описание продукта...</p>
+
+                    <div class="flex items-baseline gap-1 mb-6">
+                        <span id="product-price" class="text-4xl font-bold text-blue-400">$299</span>
+                        <span class="text-gray-500">/месяц</span>
+                    </div>
+
+                    <div class="flex flex-col sm:flex-row gap-4 mb-8">
+                        <button class="flex-1 px-8 py-4 bg-blue-600 hover:bg-blue-700 rounded-full font-semibold transition flex items-center justify-center gap-2">
+                            <i data-lucide="shopping-cart" class="w-5 h-5"></i>
+                            Заказать сейчас
+                        </button>
+                        <button class="px-8 py-4 border border-slate-700 hover:border-gray-500 rounded-full font-semibold transition">
+                            Запросить демо
+                        </button>
+                    </div>
+
+                    <div class="border-t border-slate-800 pt-6 space-y-4">
+                        <div class="flex items-center gap-3 text-gray-400">
+                            <i data-lucide="check-circle" class="w-5 h-5 text-green-400"></i>
+                            <span>Бесплатная установка и настройка</span>
+                        </div>
+                        <div class="flex items-center gap-3 text-gray-400">
+                            <i data-lucide="check-circle" class="w-5 h-5 text-green-400"></i>
+                            <span>24/7 техническая поддержка</span>
+                        </div>
+                        <div class="flex items-center gap-3 text-gray-400">
+                            <i data-lucide="check-circle" class="w-5 h-5 text-green-400"></i>
+                            <span>SLA 99.9% uptime гарантия</span>
+                        </div>
+                        <div class="flex items-center gap-3 text-gray-400">
+                            <i data-lucide="check-circle" class="w-5 h-5 text-green-400"></i>
+                            <span>Безопасное резервное копирование</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tabs -->
+            <div class="mt-12 border-t border-slate-800 pt-8">
+                <div class="flex gap-8 border-b border-slate-800 mb-8">
+                    <button class="pb-4 border-b-2 border-blue-500 text-white font-medium">Описание</button>
+                    <button class="pb-4 border-b-2 border-transparent text-gray-400 hover:text-white transition">Характеристики</button>
+                    <button class="pb-4 border-b-2 border-transparent text-gray-400 hover:text-white transition">Отзывы (12)</button>
+                </div>
+
+                <div class="grid md:grid-cols-3 gap-8">
+                    <div class="md:col-span-2 space-y-6 text-gray-400">
+                        <p>Наше решение представляет собой комплексную платформу, разработанную специально для современных бизнесов, стремящихся к цифровой трансформации.</p>
+                        <p>Основные преимущества включают в себя:</p>
+                        <ul class="list-disc list-inside space-y-2 ml-4">
+                            <li>Высокая масштабируемость под любые нагрузки</li>
+                            <li>Интеграция с существующими системами через API</li>
+                            <li>Интуитивно понятный интерфейс управления</li>
+                            <li>Соответствие международным стандартам безопасности</li>
+                            <li>Регулярные обновления и новые функции</li>
+                        </ul>
+                    </div>
+                    <div class="bg-slate-800/50 rounded-xl p-6 border border-slate-700">
+                        <h3 class="font-semibold mb-4">Требования</h3>
+                        <ul class="space-y-3 text-sm text-gray-400">
+                            <li class="flex justify-between">
+                                <span>Браузер</span>
+                                <span class="text-white">Chrome 90+, Firefox 88+</span>
+                            </li>
+                            <li class="flex justify-between">
+                                <span>Операционная система</span>
+                                <span class="text-white">Windows, macOS, Linux</span>
+                            </li>
+                            <li class="flex justify-between">
+                                <span>Интернет</span>
+                                <span class="text-white">10+ Mbps</span>
+                            </li>
+                            <li class="flex justify-between">
+                                <span>Поддержка API</span>
+                                <span class="text-white">REST, GraphQL</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-slate-950 border-t border-slate-800 pt-16 pb-8">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-4 gap-8 mb-12">
+                <div class="col-span-1 md:col-span-2">
+                    <div class="flex items-center mb-4">
+                        <i data-lucide="cpu" class="w-6 h-6 text-blue-500 mr-2"></i>
+                        <span class="text-xl font-bold">IT-Majestic</span>
+                    </div>
+                    <p class="text-gray-400 mb-4 max-w-sm">Ваш надёжный партнёр в мире информационных технологий.</p>
+                </div>
+                
+                <div>
+                    <h4 class="font-semibold mb-4">Навигация</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="index.html" class="hover:text-white transition">Главная</a></li>
+                        <li><a href="about.html" class="hover:text-white transition">О нас</a></li>
+                        <li><a href="catalog.html" class="hover:text-white transition">Каталог</a></li>
+                        <li><a href="contact.html" class="hover:text-white transition">Контакты</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="font-semibold mb-4">Контакты</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li class="flex items-center"><i data-lucide="mail" class="w-4 h-4 mr-2"></i> info@it-majestic.com</li>
+                        <li class="flex items-center"><i data-lucide="phone" class="w-4 h-4 mr-2"></i> +7 (999) 123-45-67</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="border-t border-slate-800 pt-8 text-center text-gray-500 text-sm">
+                <p>&copy; 2024 IT-Majestic. Все права защищены.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        // Product data (same as catalog)
+        const products = {
+            1: {
+                name: "Cloud Infrastructure Pro",
+                category: "Облачные решения",
+                price: "$299",
+                image: "http://static.photos/technology/640x360/101",
+                description: "Масштабируемая облачная инфраструктура для корпоративных задач с автоматическим масштабированием и балансировкой нагрузки. Идеально подходит для high-load приложений."
+            },
+            2: {
+                name: "AI Analytics Platform",
+                category: "AI & ML",
+                price: "$499",
+                image: "http://static.photos/technology/640x360/102",
+                description: "Платформа для анализа данных с использованием машинного обучения. Превращайте Big Data в actionable insights с помощью наших нейросетевых алгоритмов."
+            },
+            3: {
+                name: "CyberShield Enterprise",
+                category: "Безопасность",
+                price: "$199",
+                image: "http://static.photos/technology/640x360/103",
+                description: "Комплексная система защиты корпоративной сети и данных. Обнаружение угроз в реальном времени и автоматический response на инциденты."
+            },
+            4: {
+                name: "WebScale Framework",
+                category: "Веб-разработка",
+                price: "$149",
+                image: "http://static.photos/technology/640x360/104",
+                description: "Фреймворк для создания высоконагруженных веб-приложений. Микросервисная архитектура с поддержкой Kubernetes и Docker."
+            },
+            5: {
+                name: "DataLake Storage",
+                category: "Облачные решения",
+                price: "$99",
+                image: "http://static.photos/technology/640x360/105",
+                description: "Хранилище данных с поддержкой big data и real-time аналитики. Petabyte-scale storage с мгновенным доступом к данным."
+            },
+            6: {
+                name: "Neural Assistant",
+                category: "AI & ML",
+                price: "$249",
+                image: "http://static.photos/technology/640x360/106",
+                description: "AI-ассистент для автоматизации customer support. Обучается на ваших данных и общается с клиентами естественным языком."
+            }
+        };
+
+        // Load product data from URL
+        const urlParams = new URLSearchParams(window.location.search);
+        const productId = urlParams.get('id') || '1';
+        const product = products[productId] || products[1];
+
+        // Fill data
+        document.getElementById('product-name').textContent = product.name;
+        document.getElementById('breadcrumb-name').textContent = product.name;
+        document.getElementById('product-category').textContent = product.category;
+        document.getElementById('product-price').textContent = product.price;
+        document.getElementById('product-description').textContent = product.description;
+        document.getElementById('product-image').src = product.image;
+        document.getElementById('thumb-1').src = product.image;
+
+        lucide.createIcons();
+    </script>
+</body>
+</html>
